@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { updateVendorStatus, getVendorById } from '@/lib/db';
+import {updateVendorStatus, getVendorById } from '../../../../../lib/db';
 import { requireSession, requireRole } from '@/lib/auth';
 import { sendStatusUpdateEmail } from '@/lib/email';
 
