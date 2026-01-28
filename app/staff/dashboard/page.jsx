@@ -1,7 +1,10 @@
-'use client';
+import { Suspense } from "react";
+import Dashboard from '../Dashboard'
 
-import StaffDashboard from '../Dashboard';
-
-export default function StaffDashboardPage() {
-  return <StaffDashboard />;
+export default function Page() {
+  return (
+    <Suspense fallback={<div>Loading staff dashboard…</div>}>
+      <Dashboard />
+    </Suspense>
+  );
 }
